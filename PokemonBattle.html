@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body class="flex items-center justify-center overflow-hidden bg-gradient-to-r from-[#2D3331] to-[#2E2C29] bg-white text-white">
+    <div class="w-full h-screen py-4 max-w-sm bg-black rounded-3xl p-6">
+        <h1 class="text-center text-3xl mb-4">Pokemon Battle</h1>
+        <a href="index.html"> <button class="text-white text-xl absolute top-4 left-4">
+            <i class="fas fa-arrow-left"></i>
+        </button></a>
+        <div class="relative flex justify-between items-center mb-4" style="position: relative; left: 0; top: 0;">
+            <div class="image-wrapper">
+                <img src="img/azul.png" alt="azul" class="azul w-full h-full">
+                <img src="img/blastoise.png" alt="Blastoise image on the left side of the battleground" class="w-full h-full blastoise shadow-xl">
+            </div>
+            <span class="bg-gray-500 rounded-full p-4" id="vs">V/S</span>
+            <div class="image-wrapper">
+                <img src="img/naranja.png" alt="naranja" class="naranja w-full h-full">
+                <img src="img/charizard.png" alt="Charizard image on the right side of the battleground" class="w-full h-full charizard shadow-xl">
+            </div>
+        </div>
+        <div class="flex justify-between items-center mb-4">
+            <div class="flex items-center space-x-2">
+                <img src="img/Player.png" alt="Player 1 avatar" class="w-8 h-8 rounded-full">
+                <span>Player 1</span>
+            </div>
+            <div class="flex space-x-1">
+                <div class="w-2 h-5 bg-blue-600 rounded"></div>
+                <div class="w-2 h-5 bg-blue-600 rounded"></div>
+                <div class="w-2 h-5 bg-blue-600 rounded"></div>
+                <div class="w-2 h-5 bg-blue-600 rounded"></div>
+                <div class="w-2 h-5 bg-blue-600 rounded"></div>
+                <div class="w-2 h-5 bg-gray-600 rounded"></div>
+                <div class="w-2 h-5 bg-gray-600 rounded"></div>
+                <div class="w-2 h-5 bg-gray-600 rounded"></div>
+                <div class="w-2 h-5 bg-gray-600 rounded"></div>
+                <div class="w-2 h-5 bg-gray-600 rounded"></div>
+            </div>
+        </div>
+        <div class="flex justify-between items-center mb-4">
+            <div class="flex items-center space-x-2 ">
+                <img src="img/You.png" alt="You avatar" class="w-8 h-8 rounded-full">
+                <span>You</span>
+            </div>
+            <div class="flex space-x-1">
+                <div class="w-2 h-5 bg-orange-600 rounded"></div>
+                <div class="w-2 h-5 bg-orange-600 rounded"></div>
+                <div class="w-2 h-5 bg-orange-600 rounded"></div>
+                <div class="w-2 h-5 bg-orange-600 rounded"></div>
+                <div class="w-2 h-5 bg-orange-600 rounded"></div>
+                <div class="w-2 h-5 bg-orange-600 rounded"></div>
+                <div class="w-2 h-5 bg-orange-600 rounded"></div>
+                <div class="w-2 h-5 bg-gray-600 rounded"></div>
+                <div class="w-2 h-5 bg-gray-600 rounded"></div>
+                <div class="w-2 h-5 bg-gray-600 rounded"></div>
+            </div>
+        </div>
+        <h2 class="text-center text-xl mb-4">Choose Your Attack</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-red-600 p-4 rounded-lg text-center transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer">
+                <img src="img/Giga.png" alt="Giga Impact" class="w-16 h-16 mx-auto">
+                <p>Giga Impact</p>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg text-center transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer">
+                <img src="img/Aerial.png" alt="Aerial Ace" class="w-16 h-16 mx-auto">
+                <p>Aerial Ace</p>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg text-center transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer">
+                <img src="img/Flaming.png" alt="Flamethrower" class="w-16 h-16 mx-auto">
+                <p>Flamethrower</p>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg text-center transform transition-transform duration-300 hover:scale-105 hover:cursor-pointer">
+                <img src="img/Dragon tail.png" alt="Dragon Tail" class="w-16 h-16 mx-auto">
+                <p>Dragon Tail</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
